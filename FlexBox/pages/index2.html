@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<title>Layout2</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+  }
+  .col-1 {
+    background: gold;
+    flex: 1;
+  }
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+  .content > article {
+    flex: 3;
+    min-height: 60vh;
+  }
+  .content > aside {
+    background: hotpink;
+    flex: 1;
+  }
+  header {
+    background: tomato;
+    height: 20vh;
+  }
+  footer {
+    background: lightgreen;
+    height: 20vh;
+  }
+  header,
+  footer,
+  nav,
+  article,
+  aside {
+    padding: 1em;
+  }
+</style>
+<body>
+  <nav class="col-1"><h1>Nav</h1></nav>
+  <div class="col-2">
+    <header><h1>Header Sample!</h1></header>
+    <main class="content">
+      <article>
+        <h2>First article</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
+          laudantium odio aliquam eius accusamus atque impedit quibusdam enim
+          facere explicabo.
+        </p>
+      </article>
+      <article>
+        <h2>Second article</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
+          laudantium odio aliquam eius accusamus atque impedit quibusdam enim
+          facere explicabo.
+        </p>
+      </article>
+      <article>
+        <h2>Third article</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
+          laudantium odio aliquam eius accusamus atque impedit quibusdam enim
+          facere explicabo.
+        </p>
+      </article>
+      <aside><h1>Aside</h1></aside>
+    </main>
+    <footer><h1>Footer sample!</h1></footer>
+  </div>
+</body>

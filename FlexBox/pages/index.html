@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code-pen Demo Flexbox</title>
+    <style>
+      body {
+        padding: 2em;
+      }
+
+      .headerContainer {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        background: tomato;
+        font-weight: bold;
+        padding: 10px;
+      }
+
+      .footerContainer {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        background: lightgreen;
+        font-weight: bold;
+        padding: 10px;
+      }
+
+      .mainContainer {
+        display: flex;
+        flex-flow: row wrap;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .mainContentItems {
+        text-align: left;
+        background: deepskyblue;
+      }
+
+      .sideBarLeftItem {
+        background: gold;
+      }
+
+      .sideBarRightItem {
+        background: hotpink;
+      }
+
+      .sideBarItem {
+        flex: 1 0 0;
+        border: 0px solid green;
+      }
+
+      .mainContentItems {
+        flex: 3 0px;
+      }
+
+      article {
+        padding: 10px;
+        margin: 10px;
+        background: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="headerContainer"><h1>Header-Sample!</h1></header>
+    <div class="mainContainer">
+      <sideBar class="sideBarItem sideBarLeftItem">
+        <div class="center">
+          <p>Left Side Bar</p>
+        </div>
+      </sideBar>
+      <section class="mainContentItems">
+        <article>
+          <h2>First article</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
+            laudantium odio aliquam eius accusamus atque impedit quibusdam enim
+            facere explicabo.
+          </p>
+        </article>
+        <article>
+          <h2>Second article</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
+            laudantium odio aliquam eius accusamus atque impedit quibusdam enim
+            facere explicabo.
+          </p>
+        </article>
+        <article>
+          <h2>Third article</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
+            laudantium odio aliquam eius accusamus atque impedit quibusdam enim
+            facere explicabo.
+          </p>
+        </article>
+      </section>
+      <sideBar class="sideBarItem sideBarRightItem">
+        <div class="center">
+          <p>Right Side Bar</p>
+        </div>
+      </sideBar>
+    </div>
+    <footer class="footerContainer"><h1>Footer-Sample!</h1></footer>
+  </body>
+</html>
